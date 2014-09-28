@@ -5,14 +5,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.css" rel="stylesheet">
-<!--        
-        <style type="text/css">
-            li {font-size: 18px}
-        </style>
-
--->
+        
+        <style>
+	       IMG.displayed {
+               display: block;
+               margin-left: auto;
+               margin-right: auto }
+            
+            .jumbotron {
+                text-align: center;
+                border-bottom: 1px solid #e5e5e5;
+            }
+            
+            .jumbotron .btn {
+                font-size: 21px;
+                padding: 14px 24px;
+            }
+	</style>
+        
     </head>
-    <body>
+    <body style="background-color:#660000">
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
         
@@ -40,16 +52,36 @@
                     </ul>
                     
                     <ul class="nav navbar-nav navbar-right">
-                        <li><input type="text" class="form-control" placeholder="Username"></li>
-                        <li><input type="text" class="form-control" placeholder="Password"></li>
-                        <li><button type="submit" class="btn btn-default">Login</button></li>
-                        <li><button type="submit" class="btn btn-default">Join</button></li>
+                        <li><input type="text" class="form-control input-sm" placeholder="Username"></li>
+                        <li><input type="text" class="form-control input-sm" placeholder="Password"></li>
+                        <li><button type="submit" class="btn-xs btn-default">Login</button></li>
+                        <li><button type="submit" class="btn-xs btn-default">Join</button></li>
                     </ul>
-
                 </div>
-                     
+            </div>
+        </div>
+        
+        
+        <div class="container">
+            <div class="jumbotron">
+                <h3 class = "text-center"> <b>Stay Strong!</b></h3>
+                    <img src="http://i.imgur.com/uq8EXQc.png" alt="http://i.imgur.com/04LPCiD.jpg"
+                         class="img-responsive center-block">
+                    
+                    <p class="text-center"><br>"The struggle itself towards the
+                        heights is enough to fill a man's heart. One must imagine Siyphus happy." Albert Camus
+                    </p>
+                        <!-- Insert random image here! -->
+                        <a href="http://lamp.cse.fau.edu/~sshahrda/Bootstrap/index.html">
+                            <img src="http://i.imgur.com/adk3rQy.png"
+                                 alt="refresh"
+                                 class="img-responsive center-block" width="100" height="85">
+                        </a>
             </div>
             
-        </div>
+            <div class="footer">
+                <p>&copy; Llamas With Hats 2014</p>
+            </div>
+    </div> 
     </body>
 </html>
