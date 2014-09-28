@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Daily Motivations</title>
+        <title>Upload Motivation</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="../css/bootstrap.css" rel="stylesheet">
         
-        <style>
-	       IMG.displayed {
-               display: block;
-               margin-left: auto;
-               margin-right: auto }
+		<style type="text/css">
+            #loginBox {
+                margin: 1% auto;
+                width: 245px;
+            }
+            
+			#Button {
+                margin: 0% auto;
+                width: 245px;
+			}
+            
+			.vertical-center {
+				  min-height: 100%;  
+				  min-height: 100vh; 
+
+				  display: flex;
+				  align-items: center;
+            }
             
             .jumbotron {
                 text-align: center;
@@ -20,15 +33,15 @@
             .jumbotron .btn {
                 font-size: 21px;
                 padding: 14px 24px;
-            }
-	</style>
-        
+            }				
+        </style>
     </head>
-    <body style="background-color:#660000">
+	
+	<body style="background-color:#660000">
         <script src="http://code.jquery.com/jquery.js"></script>
-        <script src="js/bootstrap.js"></script>
-        
-        
+        <script src="../js/bootstrap.js"></script>
+       
+		
         <!-- Create black navbar -->
         <div class="navbar navbar-inverse navbar-static-top">
             <a href="#" class="navbar-brand">A4DAYS</a>
@@ -46,9 +59,9 @@
                 <!-- Collapse content -->
                 <div class="collapse navbar-collapse navHeaderCollapse">
                     <ul class="nav navbar-nav navbar-left">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="pages/upload.html">Upload</a></li>
-                        <li><a href="pages/account.html">Account</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="active"><a href="upload.html">Upload</a></li>
+                        <li><a href="account.html">Account</a></li>
                     </ul>
                     
                     <ul class="nav navbar-nav navbar-right">
@@ -60,28 +73,30 @@
                 </div>
             </div>
         </div>
-        
-        
-        <div class="container">
-            <div class="jumbotron">
-                <h3 class = "text-center"> <b>Stay Strong!</b></h3>
-                    <img src="http://i.imgur.com/uq8EXQc.png" alt="http://i.imgur.com/04LPCiD.jpg"
-                         class="img-responsive center-block">
-                    
-                    <p class="text-center"><br>"The struggle itself towards the
-                        heights is enough to fill a man's heart. One must imagine Siyphus happy." Albert Camus
-                    </p>
-                        <!-- Insert random image here! -->
-                        <a href="http://lamp.cse.fau.edu/~sshahrda/Bootstrap/index.html">
-                            <img src="http://i.imgur.com/adk3rQy.png"
-                                 alt="refresh"
-                                 class="img-responsive center-block" width="100" height="85">
-                        </a>
-            </div>
-            
-            <div class="footer">
-                <p>&copy; Llamas With Hats 2014</p>
-            </div>
-    </div> 
+		
+		<!-- Create the container -->
+		<div class="container">
+		<div class="jumbotron">			
+			<input type=" text"
+                   class="form-control  text-center text-muted input-lg"
+                   placeholder= "Insert Title here" id="loginBox">	
+			<a href="#"> <!-- pop up window-->
+			<img src="http://i.imgur.com/04LPCiD.jpg"
+                 alt="http://i.imgur.com/04LPCiD.jpg"
+                 class="img-responsive center-block" />
+			</a>
+		<br>
+			<input type=" text"
+                   class="form-control text-center text-muted input-lg "
+                   placeholder= "Insert text here " id="loginBox">		
+		<br>
+			<p><a class="btn btn-lg btn-success col-md"
+                  href="#" id="Button" role="button">Upload!</a></p>			
+		</div>
+      <div class="footer">
+        <p>&copy; Llamas With Hats 2014</p>
+      </div>
+    </div> <!-- /container -->
+
     </body>
 </html>
